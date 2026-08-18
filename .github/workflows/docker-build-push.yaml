@@ -20,7 +20,7 @@ jobs:
         id: owner
         run: echo "OWNER=${INPUT,,}" >> $GITHUB_OUTPUT
         env:
-          INPUT: ${{ github.actor }}
+          INPUT: ${{ github.repository_owner }}
 
       - name: Checkout repository
         uses: actions/checkout@v4
