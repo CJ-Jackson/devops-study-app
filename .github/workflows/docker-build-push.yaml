@@ -5,7 +5,7 @@ on:
       - "backend*"
 env:
   REGISTRY: ghcr.io
-  BACKEND_IMAGE_NAME: ${{ github.repository_owner }}/study-app-api
+  BACKEND_IMAGE_NAME: study-app-api
 jobs:
   build-and-push-backend:
     name: Build and Push Backend
@@ -16,6 +16,12 @@ jobs:
       contents: read
       packages: write
     steps:
+      - name: Owner in Lowercase
+        id: owner
+        run: echo "OWNER=${INPUT,,}" >> $GITHUB_OUTPUT
+        env:
+          INPUT: ${{ github.actor }}
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -36,8 +42,8 @@ jobs:
           context: ./src/backend
           push: true
           tags: |
-            ${{ env.REGISTRY }}/${{ env.BACKEND_IMAGE_NAME }}:${{ steps.tag.outputs.TAG }}
-            ${{ env.REGISTRY }}/${{ env.BACKEND_IMAGE_NAME }}:latest
+            ${{ env.REGISTRY }}/${{ steps.owner.outputs.OWNER }}/${{ env.BACKEND_IMAGE_NAME }}:${{ steps.tag.outputs.TAG }}
+            ${{ env.REGISTRY }}/${{ steps.owner.outputs.OWNER }}/${{ env.BACKEND_IMAGE_NAME }}:latest
     outputs:
       tag: ${{ steps.tag.outputs.TAG }}
       app: backend
