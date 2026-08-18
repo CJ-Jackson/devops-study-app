@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/CJ-Jackson/devops-study-app/compare/backend-v0.2.0...backend-v0.2.1) (2026-08-18)
+
+
+### Bug Fixes
+
+* **gha:** lower case owner name ([#9](https://github.com/CJ-Jackson/devops-study-app/issues/9)) ([37f318d](https://github.com/CJ-Jackson/devops-study-app/commit/37f318dab04abe267d329211f102555b84b37044))
+
 ## [0.2.0](https://github.com/CJ-Jackson/devops-study-app/compare/backend-v0.1.0...backend-v0.2.0) (2026-08-18)
 
 
