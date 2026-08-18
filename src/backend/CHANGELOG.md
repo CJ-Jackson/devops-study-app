@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/CJ-Jackson/devops-study-app/compare/backend-v0.1.0...backend-v0.2.0) (2026-08-18)
+
+
+### Features
+
+* **backend:** added container image building and pushing ([#7](https://github.com/CJ-Jackson/devops-study-app/issues/7)) ([976dee9](https://github.com/CJ-Jackson/devops-study-app/commit/976dee982ff4a4cc98b25574d8115470e18525cc))
+
 ## 0.1.0 (2026-08-18)
 
 
