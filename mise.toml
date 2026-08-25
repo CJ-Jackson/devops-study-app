@@ -1,8 +1,11 @@
 [tools]
+k3d = "latest"
 python = "3.13"
 ruff = "latest"
 trivy = "latest"
 uv = "latest"
+kubectl = "latest"
+k9s = "latest"
 
 [settings]
 python.uv_venv_auto = "create|source"
