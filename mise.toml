@@ -6,6 +6,7 @@ trivy = "latest"
 uv = "latest"
 kubectl = "latest"
 k9s = "latest"
+gh = "latest"
 
 [settings]
 python.uv_venv_auto = "create|source"
@@ -15,6 +16,7 @@ experimental = true
 [env]
 APP_REPO = 'devops-study-app'
 GITOPS_REPO = 'devops-study-app-gitops'
+GITUSER = 'CJ-Jackson'
 
 [hooks]
 enter = "bash ./scripts/setup_project"
@@ -30,3 +32,7 @@ run = "bash ./kubernetes/setup_cluster_minimal"
 [tasks.e2e-test]
 description = "Run end-to-end tests on Kubernetes deployment"
 run = "cd ./kubernetes && uv run e2e_test.py"
+
+[tasks.setup-keys]
+description = "Set up deploy keys for our repo"
+run = "bash ./scripts/setup_deploy_key"
