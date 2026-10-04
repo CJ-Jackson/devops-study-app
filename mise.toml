@@ -7,6 +7,7 @@ uv = "latest"
 kubectl = "latest"
 k9s = "latest"
 gh = "latest"
+flux2 = "latest"
 
 [settings]
 python.uv_venv_auto = "create|source"
@@ -36,3 +37,7 @@ run = "cd ./kubernetes && uv run e2e_test.py"
 [tasks.setup-keys]
 description = "Set up deploy keys for our repo"
 run = "bash ./scripts/setup_deploy_key"
+
+[tasks.k8s-setup-gitops]
+description = "Setup up a cluster configured with GitOps using Flux"
+run = "bash ./kubernetes/setup_cluster_gitops"
