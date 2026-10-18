@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/CJ-Jackson/devops-study-app/compare/backend-v0.3.0...backend-v0.4.0) (2026-10-18)
+
+
+### Features
+
+* added comment ([1d03136](https://github.com/CJ-Jackson/devops-study-app/commit/1d031365b39413ad4e2153dd15bcc56671357c8a))
+
 ## [0.3.0](https://github.com/CJ-Jackson/devops-study-app/compare/backend-v0.2.1...backend-v0.3.0) (2026-10-18)
 
 
