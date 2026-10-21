@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/CJ-Jackson/devops-study-app/compare/backend-v0.4.0...backend-v0.5.0) (2026-10-21)
+
+
+### Features
+
+* corrected repo ([f8a4393](https://github.com/CJ-Jackson/devops-study-app/commit/f8a43931d9b3f9ed6db383e7d273b8d679f0bb90))
+
 ## [0.4.0](https://github.com/CJ-Jackson/devops-study-app/compare/backend-v0.3.0...backend-v0.4.0) (2026-10-18)
 
 
